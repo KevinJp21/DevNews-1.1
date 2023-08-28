@@ -83,7 +83,7 @@ html {
 
  .subtitle{
     margin-bottom: 46px;
-    text-align: justify;
+    text-align: left;
  }
 
  .subtitles2{
@@ -108,7 +108,7 @@ html {
 
 .entry-text{
     max-width: 780px;
-    text-align:justify;
+    text-align:left;
     margin: 32px 0px;
  }
 

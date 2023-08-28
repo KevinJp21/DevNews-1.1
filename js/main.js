@@ -1,6 +1,8 @@
 import '../css/content.css'
 import '../css/style.css'
-import post from'../Json/posts.json'
+import post from '../Json/posts.json'
+
+
 
 const site_main = post.posts.map(site_main =>{
     return `
@@ -36,7 +38,32 @@ const site_main = post.posts.map(site_main =>{
               <p class="fs-2">${site_main.paragraph_7}</p>
             </article>
           </div>
+
+    <div class="link_page me-auto">
+        <h3 class="fs-1 contenido_rel">${site_main.h3}</h3>
+        <div class="container-links ms-5">
+            <a class="fs-4 links" href="${site_main.link_article}">${site_main.link_title}</a>
+        </div>
+    </div>
+
+    <div class="form-container">
+        <div class="form">
+            <div class="add-comment">
+                <h4 class="display-3 subtitles2">Agrega un comentario</h4>
+                <div class="comment-textarea">
+                    <textarea name="Comentario" placeholder="Comentario*"></textarea>
+                </div>
+                <div class="comment-name">
+                    <input type="text" name="firstname" placeholder="Nombre*">
+                </div>
+                      
+                <div class="comment-email">
+                    <input type="email" name="email" placeholder="Email*">
+                </div>
+                    <button class="ms-auto mb-5 fs-2 submit-btn">Enviar</button>
+                </div>
+        </div>
+    </div>
     `
 })
-
-document.querySelector('#site-main-id').innerHTML = site_main.join('')
+document.querySelector('#site-main').innerHTML = site_main.join('')

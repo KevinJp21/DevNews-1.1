@@ -1,6 +1,7 @@
 {
     "posts":[
         {
+            "id":1,
             "author_name":"Kevin Julio Pineda",
             "date":"03 de agosto de 2023",
             "title":"Los lenguajes de programación más demandados en 2023",
@@ -13,15 +14,12 @@
             "paragraph_5":"El índice se suele publicar en julio, buen momento para aprender lenguajes de programación nuevos. ¿Cómo realizan este análisis? A partir de las búsquedas detectadas en Google, Bing, Yahoo!, Wikipedia, Amazon, YouTube y Baidu. Con los resultados estipulan la popularidad de cada lenguaje y ofrecen un ranking de popularidad. Es decir, qué lenguajes buscan los programadores y las empresas.",
             "img_2":"../img/Ranking.png",
             "paragraph_6":"El índice TIOBE también incluye otros lenguajes que no están en el top 10, pero que tienen un interés relevante o una tendencia al alza. Algunos ejemplos son Rust, que ocupa el puesto 17 y es el lenguaje más rápido en crecer, COBOL, que vuelve al top 20 después de mucho tiempo, y Julia, que se acerca peligrosamente al top 20.",
-            "paragraph_7":"El índice TIOBE es una herramienta interesante para conocer el panorama actual de los lenguajes de programación y sus perspectivas de futuro. Sin embargo, hay que tener en cuenta que el índice no mide la calidad o la cantidad de código escrito en cada lenguaje, sino su popularidad entre los desarrolladores y las fuentes disponibles. Por lo tanto, no se debe tomar el índice como una verdad absoluta, sino como una referencia orientativa."
-        }
-    ],
-
-    "related_content":[
-        {
+            "paragraph_7":"El índice TIOBE es una herramienta interesante para conocer el panorama actual de los lenguajes de programación y sus perspectivas de futuro. Sin embargo, hay que tener en cuenta que el índice no mide la calidad o la cantidad de código escrito en cada lenguaje, sino su popularidad entre los desarrolladores y las fuentes disponibles. Por lo tanto, no se debe tomar el índice como una verdad absoluta, sino como una referencia orientativa.",
             "h3":"Contenido relacionado:",
             "link_article":"/article2.html",
             "link_title":"Los mejores framework frontend de 2023 para desarollo web."
         }
     ]
+
+
 }
