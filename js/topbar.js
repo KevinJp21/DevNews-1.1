@@ -26,7 +26,34 @@ const navbar_elements = topbar.data.map(topbar_elements => {
     </div>
 
   </div>
+
+  <div class="btn-light-mode">
+    <li><i id="DarkModeOn" class="fa-solid fa-moon fa-2xl"></i></li>
+    <li><i  id="LightModeOn" class="fa-solid fa-sun fa-2xl"></i></li>
+  </div>
     `
 })
 
-document.querySelector('#topbar-elements-id').innerHTML = navbar_elements.join('')
+document.querySelector('#row-id').innerHTML = navbar_elements.join('')
+
+
+// Script para activar y desactivar el modo oscuro
+const DarkModeOn = document.getElementById('DarkModeOn');
+DarkModeOn.addEventListener('click', () => {
+  document.body.classList.add('dark-mode');
+  localStorage.setItem('modo', 'oscuro');
+});
+
+const LightModeOn = document.getElementById('LightModeOn');
+LightModeOn.addEventListener('click', () => {
+  document.body.classList.remove('dark-mode');
+  localStorage.setItem('modo', 'claro');
+});
+
+// Verifica el modo al cargar la página
+document.addEventListener('DOMContentLoaded', () => {
+  const modoGuardado = localStorage.getItem('modo');
+  if (modoGuardado === 'oscuro') {
+    document.body.classList.add('dark-mode');
+  }
+});
