@@ -4,7 +4,7 @@ import post from '../Json/posts.json'
 
 
 
-const site_main = post.posts.map(site_main =>{
+const site_main = post.post.map(site_main =>{
     return `
     <header class="entry-header" id="entry-header-id">
         <h1 class="display-1 title-header">${site_main.title}</h1>
@@ -66,4 +66,5 @@ const site_main = post.posts.map(site_main =>{
     </div>
     `
 })
+
 document.querySelector('#site-main').innerHTML = site_main.join('')

@@ -7,7 +7,7 @@ import topbar from '../Json/topbar.json'
 const navbar = topbar.data.map(topbar => {
   return `
     <div class="title">
-    <a class="display-1" href="Index.html">${topbar.logo}</a>
+    <a class="display-1" href="${topbar.link_logo}">${topbar.logo}</a>
     </div>
     `
 })
@@ -18,11 +18,11 @@ const navbar_elements = topbar.data.map(topbar_elements => {
   return `
   <div class="topbar-elements">
     <div class="enlaces">
-        <a class="fs-1" href="Index.html">${topbar_elements['link-1']}</a>
+        <a class="fs-1" href="${topbar_elements['link-1']}">${topbar_elements['title-link-1']}</a>
     </div>
 
     <div class="enlaces">
-        <a class="fs-1" href="Content.html">${topbar_elements['link-2']}</a>
+        <a class="fs-1" href="Content.html">${topbar_elements['title-link-2']}</a>
     </div>
 
   </div>
