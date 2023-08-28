@@ -1,4 +1,3 @@
-import '../css/content.css'
 import '../css/style.css'
 import post from '../Json/posts.json'
 
