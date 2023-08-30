@@ -1,66 +1,7 @@
-(function () {
-  const s = document.createElement("link").relList;
-  if (s && s.supports && s.supports("modulepreload")) return;
-  for (const a of document.querySelectorAll('link[rel="modulepreload"]')) n(a);
-  new MutationObserver((a) => {
-    for (const o of a)
-      if (o.type === "childList")
-        for (const r of o.addedNodes)
-          r.tagName === "LINK" && r.rel === "modulepreload" && n(r);
-  }).observe(document, { childList: !0, subtree: !0 });
-  function l(a) {
-    const o = {};
-    return (
-      a.integrity && (o.integrity = a.integrity),
-      a.referrerPolicy && (o.referrerPolicy = a.referrerPolicy),
-      a.crossOrigin === "use-credentials"
-        ? (o.credentials = "include")
-        : a.crossOrigin === "anonymous"
-        ? (o.credentials = "omit")
-        : (o.credentials = "same-origin"),
-      o
-    );
-  }
-  function n(a) {
-    if (a.ep) return;
-    a.ep = !0;
-    const o = l(a);
-    fetch(a.href, o);
-  }
-})();
-/*---------------------POST 1------------------------*/
-const t = [
-    {
-      id: 1,
-      author_name: "Kevin Julio Pineda",
-      date: "03 de agosto de 2023",
-      title: "Los lenguajes de programación más demandados en 2023",
-      paragraph_1:
-        "Los lenguajes de programación sirven para crear apps, páginas web, procesar datos y mucho más. De ahí que los haya más populares o menos en el ámbito científico o empresarial.",
-      img_1:
-        "https://appmarketingnews.io/wp-content/uploads/2023/03/Captura-de-Pantalla-2023-03-21-a-las-14.25.02.jpg",
-      paragraph_2:
-        "Los lenguajes de programación son la base para escribir instrucciones, órdenes y algoritmos. Lo que conocemos como código. Y con ese código hacemos funcionar máquinas físicas, dispositivos electrónicos, programas, aplicaciones y demás software. Vamos, que necesitamos lenguajes de programación para crear código y necesitamos código para comunicarnos con máquinas, ordenadores y aparatos en general.",
-      paragraph_3:
-        "Sea como fuere, resulta humanamente imposible conocer todos los lenguajes de programación. Se pueden dominar varios de ellos, pero para lograr ese dominio es necesario aprenderlos. ¿Por dónde empezar? ¿Qué lenguajes de programación deberías conocer si quieres ser programador, experto en análisis de datos o desarrollador web? Te damos la respuesta en tres rankings distintos que se complementan entre sí.",
-      subitle_2: "Índice TIOBE de lenguajes de programación",
-      paragraph_4:
-        "TIOBE. Es una empresa holandesa dedicada al análisis de código. Según ellos, cada día analizan más de 1.000 millones de líneas de código de desarrollos públicos y privados de empresas de todo tipo. Y además de eso son conocidos por confeccionar un índice con los lenguajes de programación más populares.",
-      paragraph_5:
-        "El índice se suele publicar en julio, buen momento para aprender lenguajes de programación nuevos. ¿Cómo realizan este análisis? A partir de las búsquedas detectadas en Google, Bing, Yahoo!, Wikipedia, Amazon, YouTube y Baidu. Con los resultados estipulan la popularidad de cada lenguaje y ofrecen un ranking de popularidad. Es decir, qué lenguajes buscan los programadores y las empresas.",
-      img_2:
-        "https://p7.itc.cn/q_70/images03/20230107/f06bb6de36cd416288701b024e211389.png",
-      paragraph_6:
-        "El índice TIOBE también incluye otros lenguajes que no están en el top 10, pero que tienen un interés relevante o una tendencia al alza. Algunos ejemplos son Rust, que ocupa el puesto 17 y es el lenguaje más rápido en crecer, COBOL, que vuelve al top 20 después de mucho tiempo, y Julia, que se acerca peligrosamente al top 20.",
-      paragraph_7:
-        "El índice TIOBE es una herramienta interesante para conocer el panorama actual de los lenguajes de programación y sus perspectivas de futuro. Sin embargo, hay que tener en cuenta que el índice no mide la calidad o la cantidad de código escrito en cada lenguaje, sino su popularidad entre los desarrolladores y las fuentes disponibles. Por lo tanto, no se debe tomar el índice como una verdad absoluta, sino como una referencia orientativa.",
-      h3: "Contenido relacionado:",
-      link_article: "post_2.html",
-      link_title: "Los mejores framework frontend de 2023 para desarollo web.",
-    },
-  ],
+
+
   /*---------------------POST 2------------------------*/
-  d = [
+  const post2 = [
     {
       id: 2,
       author_name: "Kevin Julio Pineda",
@@ -100,17 +41,12 @@ const t = [
         "Angular se diferencia de React en que tiene una funcionalidad de enlace de datos bidireccional. Indica que el modelo y la vista están sincronizados en tiempo real, lo que significa que cualquier cambio en el modelo se refleja inmediatamente en la vista y viceversa.",
       paragraph_angular_3:
         "Si está trabajando en un proyecto que requiere desarrollar aplicaciones móviles o web, Angular es perfecto. Además, puede utilizar este marco para crear aplicaciones web progresivas y de varias páginas. Las aplicaciones angulares son utilizadas por empresas como BMW, Xbox, Forbes, Blender y otras.",
-      paragraph_angular_4:
-        "Angular es más difícil de entender que React. A pesar de que hay mucha documentación disponible, es demasiado difícil o difícil de entender.",
+      paragraph_angular_4:"Angular es más difícil de entender que React. A pesar de que hay mucha documentación disponible, es demasiado difícil o difícil de entender.",
       "h3-3": "JQuery",
-      "img-jquery":
-        "https://logica7web.es/wp-content/uploads/2022/04/1648987772_588_Los-mejores-frameworks-frontend-de-2022-para-desarrollo-web.png",
-      paragraph_jquery_1:
-        "jQuery es uno de los primeros marcos frontend, lanzado en 2006. A pesar de su fecha de lanzamiento, lo que lo distingue es su relevancia continua. en el entorno tecnológico actual. jQuery no solo es simple y fácil de usar, sino que también elimina la necesidad de largos códigos JavaScript.",
-      paragraph_jquery_2:
-        "Hay una gran comunidad jQuery para soluciones como resultado de su larga existencia.",
-      paragraph_jquery_3:
-        "jQuery es una biblioteca que se utiliza para cambiar CSS y DOM con el fin de mejorar la funcionalidad y la interactividad de un sitio web.",
+      "img-jquery":"https://logica7web.es/wp-content/uploads/2022/04/1648987772_588_Los-mejores-frameworks-frontend-de-2022-para-desarrollo-web.png",
+      paragraph_jquery_1:"jQuery es uno de los primeros marcos frontend, lanzado en 2006. A pesar de su fecha de lanzamiento, lo que lo distingue es su relevancia continua. en el entorno tecnológico actual. jQuery no solo es simple y fácil de usar, sino que también elimina la necesidad de largos códigos JavaScript.",
+      paragraph_jquery_2:"Hay una gran comunidad jQuery para soluciones como resultado de su larga existencia.",
+      paragraph_jquery_3:"jQuery es una biblioteca que se utiliza para cambiar CSS y DOM con el fin de mejorar la funcionalidad y la interactividad de un sitio web.",
       paragraph_jquery_4:
         "Aunque antes no podíamos crear aplicaciones móviles con jQuery, los límites de uso se han ampliado gracias a las mejoras recientes en jQuery Mobile. Además, con su sistema de interfaz de usuario basado en HTML5, jQuery Mobile, un avance reciente en este marco permite a los desarrolladores crear aplicaciones móviles nativas. Además, jQuery es compatible con el navegador y funciona con cualquier navegador que elija.",
       "h3-4": "Vue.js",
@@ -146,73 +82,110 @@ const t = [
     },
   ],
 
+  post_2 = {article2: post2}
 
-  p = { post: t, post2: d, content_title: c, content: u },
+  const site_main2 = post_2.article2.map((e)=>
+  `
+  <header class="entry-header" id="entry-header-id">
+      <h1 class="display-1 title-header">${e.title}</h1>
+
+      <div class="fs-2 subtitle">
+          <p>${e.paragraph_1}</p>
+      </div>
+
+      <div class="entry-meta">
+          <span class="fs-4">por</span>
+          <span class="fs-4 author">${e.author_name}</span>
+          <span class="fs-4 posted-on">${e.date}</span>
+      </div>
+  </header>
+
+  <div class="img-box">
+      <img class="img-fluid"
+      src="${e.img_1}"
+      alt="Lenguajes de programacion">
+  </div>
+
+  <div class="entry-text">
+          <article class="post-1">
+            <h2 class="subtitles display-3">${e['h2-1']}</h2>
+            <p class="fs-2">${e.paragraph_2}</p>
+            <p class="fs-2">${e.paragraph_3}</p>
+            <p class="fs-2">${e.paragraph_4}</p>
+            <p class="fs-2">${e.paragraph_5}</p>
+            <p class="fs-2">${e.paragraph_6}</p>
+            <h2 class="subtitles">${e['h2-2']}</h2>
+            
+            <h3 class="fs-1 subtitles2">${e['h3-1']}</h3>
+            <img class="img-fluid"src="${e['img-react']}"alt="React Logo">
+            <p class="fs-2">${e.paragraph_react_1}</p>
+            <p class="fs-2">${e.paragraph_react_2}</p>
+            <p class="fs-2">${e.paragraph_react_3}</p>
+
+            <h3 class="fs-1 subtitles2">${e['h3-2']}</h3>
+            <img class="img-fluid"src="${e['img-angular']}"alt="Jquery Logo">
+            <p class="fs-2">${e.paragraph_angular_1}</p>
+            <p class="fs-2">${e.paragraph_angular_2}</p>
+            <p class="fs-2">${e.paragraph_angular_3}</p>
+            <p class="fs-2">${e.paragraph_angular_4}</p>
+
+            <h3 class="fs-1 subtitles2">${e['h3-3']}</h3>
+            <img class="img-fluid"src="${e['img-jquery']}"alt="Jquery Logo">
+            <p class="fs-2">${e.paragraph_jquery_1}</p>
+            <p class="fs-2">${e.paragraph_jquery_2}</p>
+            <p class="fs-2">${e.paragraph_jquery_3}</p>
+            <p class="fs-2">${e.paragraph_jquery_4}</p>
+
+            <h3 class="fs-1 subtitles2">${e['h3-4']}</h3>
+            <img class="img-fluid"src="${e['img-vuejs']}"alt="Jquery Logo">
+            <p class="fs-2">${e.paragraph_vuejs_1}</p>
+            <p class="fs-2">${e.paragraph_vuejs_2}</p>
+            <p class="fs-2">${e.paragraph_vuejs_3}</p>
+            
+            <h2 class="subtitles display-3">${e['h2-3']}</h2>
+            <h3 class="fs-1 subtitles2">${e['h3-5']}</h3>
+            <p class="fs-2">${e.paragraph_quest_1}</p>
+
+            <h3 class="fs-1 subtitles2">${e['h3-6']}</h3>
+            <p class="fs-2">${e.paragraph_quest_2}</p>
+
+            <h3 class="fs-1 subtitles2">${e['h3-7']}</h3>
+            <p class="fs-2">${e.paragraph_quest_3}</p>
+
+            <h2 class="subtitles display-3">${e['h2-4']}</h2>
+            <p class="fs-2">${e.paragraph_concl_1}</p>
+            <p class="fs-2">${e.paragraph_concl_2}</p>
+            <p class="fs-2">${e.paragraph_concl_3}</p>
+          </article>
+        </div>
+
+  <div class="link_page me-auto">
+      <h3 class="fs-1 contenido_rel">${e['h3-8']}</h3>
+      <div class="container-links ms-5">
+          <a class="fs-4 links" href="${e.link_article}">${e.link_title}</a>
+      </div>
+  </div>
+
+  <div class="form-container">
+      <div class="form">
+          <div class="add-comment">
+              <h4 class="display-3 subtitles2">Agrega un comentario</h4>
+              <div class="comment-textarea">
+                  <textarea name="Comentario" placeholder="Comentario*"></textarea>
+              </div>
+              <div class="comment-name">
+                  <input type="text" name="firstname" placeholder="Nombre*">
+              </div>
+                    
+              <div class="comment-email">
+                  <input type="email" name="email" placeholder="Email*">
+              </div>
+                  <button class="ms-auto mb-5 fs-2 submit-btn">Enviar</button>
+              </div>
+      </div>
+  </div>
+  `
+  )
   
-  /*---------------------POST 1------------------------*/
-  m = p.post.map(
-    (e) => `
-    <header class="entry-header" id="entry-header-id">
-        <h1 class="display-1 title-header">${e.title}</h1>
-
-        <div class="fs-2 subtitle">
-            <p>${e.paragraph_1}</p>
-        </div>
-
-        <div class="entry-meta">
-            <span class="fs-4">por</span>
-            <span class="fs-4 author">${e.author_name}</span>
-            <span class="fs-4 posted-on">${e.date}</span>
-        </div>
-    </header>
-
-    <div class="img-box">
-        <img class="img-fluid"
-        src="${e.img_1}"
-        alt="Lenguajes de programacion">
-    </div>
-
-    <div class="entry-text">
-            <article class="post-1">
-              <p class="fs-2">${e.paragraph_2}</p>
-              <p class="fs-2">${e.paragraph_3}</p>
-              <h2 class="subtitles display-3">${e.subitle_2}</h2>
-              <p class="fs-2">${e.paragraph_4}</p>
-              <p class="fs-2">${e.paragraph_5}</p>
-              <img class="img-fluid" src="${e.img_2}" alt>
-              <p class="fs-2">${e.paragraph_6}</p>
-              <p class="fs-2">${e.paragraph_7}</p>
-            </article>
-          </div>
-
-    <div class="link_page me-auto">
-        <h3 class="fs-1 contenido_rel">${e.h3}</h3>
-        <div class="container-links ms-5">
-            <a class="fs-4 links" href="${e.link_article}">${e.link_title}</a>
-        </div>
-    </div>
-
-    <div class="form-container">
-        <div class="form">
-            <div class="add-comment">
-                <h4 class="display-3 subtitles2">Agrega un comentario</h4>
-                <div class="comment-textarea">
-                    <textarea name="Comentario" placeholder="Comentario*"></textarea>
-                </div>
-                <div class="comment-name">
-                    <input type="text" name="firstname" placeholder="Nombre*">
-                </div>
-                      
-                <div class="comment-email">
-                    <input type="email" name="email" placeholder="Email*">
-                </div>
-                    <button class="ms-auto mb-5 fs-2 submit-btn">Enviar</button>
-                </div>
-        </div>
-    </div>
-    `
-  );
-
-
-document.querySelector("#site-main").innerHTML = m.join("");
+  document.querySelector('#site-main').innerHTML = site_main2.join("")
 

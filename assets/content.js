@@ -60,7 +60,9 @@ const c = [
       date: "03 de agosto de 2023",
     },
   ],
+  
   links = { new_post: u },
+
   entry_header = content.content.map(
     (e) =>
       `
