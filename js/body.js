@@ -19,11 +19,11 @@ const navbar_elements = topbar.data.map(topbar_elements => {
   return `
   <div class="topbar-elements">
     <div class="enlaces">
-        <a class="fs-1" href="${topbar_elements['link-1']}">${topbar_elements['title-link-1']}</a>
+        <a class="fs-1" href="${topbar_elements.link_1}">${topbar_elements['title_link-1']}</a>
     </div>
 
     <div class="enlaces">
-        <a class="fs-1" href="Content.html">${topbar_elements['title-link-2']}</a>
+        <a class="fs-1" href="${topbar_elements.link_2}">${topbar_elements['title_link-2']}</a>
     </div>
 
   </div>
