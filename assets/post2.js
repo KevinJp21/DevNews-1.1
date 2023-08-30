@@ -5,7 +5,7 @@
     {
       id: 2,
       author_name: "Kevin Julio Pineda",
-      date: "25 de agosto de 2023",
+      date: "03 de agosto de 2023",
       title: "Los mejores frameworks frontend de 2023 para desarrollo web",
       paragraph_1:
         "Todos los negocios en el mercado actual se enfocan en la experiencia del usuario. Incluso el resumen que recibe sobre su proyecto como desarrollador enfatiza la importancia de la simplicidad de la interfaz de usuario. Lo que la gente ve y experimenta debe ser fluido, sin importar cuán complejas sean las actividades y operaciones en segundo plano. Netflix, Facebook, Instagram y otros negocios de gran éxito trabajan en esta idea. Echa un vistazo a cualquiera de estos sitios web; son todopoderosos, simples y tienen una interfaz de usuario fantástica.",
