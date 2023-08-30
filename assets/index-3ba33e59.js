@@ -57,7 +57,7 @@
                 </div>
         </div>
     </div>
-    `);document.querySelector("#site-main").innerHTML=m.join("");const g=[{id:1,logo:"DevNews",link_logo:"index.html","title_link-1":"Inicio","title_link-2":"Contenido",link_1:"index.html",link_2:"content.html"}],i={data:g},f=[{footer1:"&copy; Copyright 2023 - Todos los derechos reservados | KevinJp"}],h={footer:f},b=i.data.map(e=>`
+    `);document.querySelector("#site-main").innerHTML=m.join("");const g=[{id:1,logo:"DevNews",link_logo:"index.html","title_link-1":"Perro","title_link-2":"Contenido",link_1:"index.html",link_2:"content.html"}],i={data:g},f=[{footer1:"&copy; Copyright 2023 - Todos los derechos reservados | KevinJp"}],h={footer:f},b=i.data.map(e=>`
     <div class="title">
     <a class="display-1" href="${e.link_logo}">${e.logo}</a>
     </div>
