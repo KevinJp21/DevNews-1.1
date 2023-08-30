@@ -88,6 +88,7 @@ document.querySelector("#row-id").innerHTML = y.join("");
 const v = h.footer.map(
   (e) => `
       <p class="fs-5 m-0">${e.footer1}</p>
+      <a href="https://github.com/KevinJp21?tab=repositories"><i class="fa-brands fa-github"></i></a>
   `
 );
 
