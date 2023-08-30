@@ -1,9 +1,10 @@
 import '../css/content.css'
 import '../css/style.css'
 import topbar from '../Json/topbar.json'
+import footer from '../Json/footer.json'
 
 
-
+/*TOPBAR*/
 const navbar = topbar.data.map(topbar => {
   return `
     <div class="title">
@@ -36,8 +37,18 @@ const navbar_elements = topbar.data.map(topbar_elements => {
 
 document.querySelector('#row-id').innerHTML = navbar_elements.join('')
 
+/*fOOTER*/
+const body = footer.footer.map(footer =>{
+  return `
+      <p class="fs-5 m-0">${footer.footer1}</p>
+  `
+})
 
-// Script para activar y desactivar el modo oscuro
+document.querySelector('.footer').innerHTML = body.join('')
+
+
+/*Activar o desactivar el modo oscuro*/
+
 const DarkModeOn = document.getElementById('DarkModeOn');
 DarkModeOn.addEventListener('click', () => {
   document.body.classList.add('dark-mode');

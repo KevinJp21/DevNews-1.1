@@ -81,7 +81,10 @@
         "link_article":"/index.html",
         "link_title":"Los mejores framework frontend de 2023 para desarollo web."
     }],
-
+    "content_title":[{
+        "h2":"Contenido",
+        "h1":"Publicaciones recientes"
+    }],
     "content":[
         {
         "id":"1",
@@ -102,6 +105,5 @@
         "author_name":"Kevin Julio Pineda",
         "date":"03 de agosto de 2023"
     }
-
 ]
 }

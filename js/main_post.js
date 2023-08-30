@@ -32,10 +32,9 @@ data.posts.forEach((post) => {
         </div>
       </div>
     
-    <footer>
+      <footer>
       <div class="footer">
-          <p class="fs-5 m-0">&copy; Copyright 2023 - Todos los derechos reservados |
-              KevinJp </p>
+          <p class="fs-5 m-0">&copy; Copyright 2023 - Todos los derechos reservados | KevinJp</p>
     </footer>
     
     <script type="module" src="/js/post${postId}.js"></script>

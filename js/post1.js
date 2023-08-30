@@ -3,6 +3,7 @@ import post from '../Json/posts.json'
 
 
 
+
 const site_main = post.post.map(site_main =>{
     return `
     <header class="entry-header" id="entry-header-id">
@@ -67,3 +68,4 @@ const site_main = post.post.map(site_main =>{
 })
 
 document.querySelector('#site-main').innerHTML = site_main.join('')
+
