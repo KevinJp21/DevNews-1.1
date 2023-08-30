@@ -57,18 +57,18 @@
                 </div>
         </div>
     </div>
-    `);document.querySelector("#site-main").innerHTML=m.join("");const g=[{id:1,logo:"DevNews",link_logo:"/index.html","title-link-1":"Inicio","title-link-2":"Contenido","link-1":"/index.html","link-2":"/content.html"}],i={data:g},f=[{footer1:"&copy; Copyright 2023 - Todos los derechos reservados | KevinJp"}],h={footer:f},b=i.data.map(e=>`
+    `);document.querySelector("#site-main").innerHTML=m.join("");const g=[{id:1,logo:"DevNews",link_logo:"index.html","title_link-1":"Inicio","title_link-2":"Contenido",link_1:"index.html",link_2:"content.html"}],i={data:g},f=[{footer1:"&copy; Copyright 2023 - Todos los derechos reservados | KevinJp"}],h={footer:f},b=i.data.map(e=>`
     <div class="title">
     <a class="display-1" href="${e.link_logo}">${e.logo}</a>
     </div>
     `);document.querySelector("#topbar_id").innerHTML=b.join("");const y=i.data.map(e=>`
   <div class="topbar-elements">
     <div class="enlaces">
-        <a class="fs-1" href="${e["link-1"]}">${e["title-link-1"]}</a>
+        <a class="fs-1" href="${e.link_1}">${e["title_link-1"]}</a>
     </div>
 
     <div class="enlaces">
-        <a class="fs-1" href="Content.html">${e["title-link-2"]}</a>
+        <a class="fs-1" href="${e.link_2}">${e["title_link-2"]}</a>
     </div>
 
   </div>
