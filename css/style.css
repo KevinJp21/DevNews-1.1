@@ -253,3 +253,16 @@ border-color: red;
 .footer p{
    color: aliceblue;
 }
+
+
+.footer{
+   display: flex;
+   gap: 20px;
+   align-items: center;
+}
+
+.footer i{
+   color: rgb(255, 255, 255);
+   font-size: 30px;
+}
+

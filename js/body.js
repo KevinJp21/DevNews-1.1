@@ -41,6 +41,7 @@ document.querySelector('#row-id').innerHTML = navbar_elements.join('')
 const body = footer.footer.map(footer =>{
   return `
       <p class="fs-5 m-0">${footer.footer1}</p>
+      <a href="https://github.com/KevinJp21?tab=repositories"><i class="fa-brands fa-github"></i></a>
   `
 })
 
