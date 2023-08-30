@@ -147,8 +147,7 @@ const t = [
   ],
 
 
-  p = { post: t, post2: d, content_title: c, content: u },
-  
+
   /*---------------------POST 1------------------------*/
   m = p.post.map(
     (e) => `

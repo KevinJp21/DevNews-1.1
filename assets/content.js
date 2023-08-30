@@ -1,33 +1,4 @@
-(function () {
-    const s = document.createElement("link").relList;
-    if (s && s.supports && s.supports("modulepreload")) return;
-    for (const a of document.querySelectorAll('link[rel="modulepreload"]')) n(a);
-    new MutationObserver((a) => {
-      for (const o of a)
-        if (o.type === "childList")
-          for (const r of o.addedNodes)
-            r.tagName === "LINK" && r.rel === "modulepreload" && n(r);
-    }).observe(document, { childList: !0, subtree: !0 });
-    function l(a) {
-      const o = {};
-      return (
-        a.integrity && (o.integrity = a.integrity),
-        a.referrerPolicy && (o.referrerPolicy = a.referrerPolicy),
-        a.crossOrigin === "use-credentials"
-          ? (o.credentials = "include")
-          : a.crossOrigin === "anonymous"
-          ? (o.credentials = "omit")
-          : (o.credentials = "same-origin"),
-        o
-      );
-    }
-    function n(a) {
-      if (a.ep) return;
-      a.ep = !0;
-      const o = l(a);
-      fetch(a.href, o);
-    }
-  })();
+
 
     /*---------------------Content------------------------*/
   c = [
