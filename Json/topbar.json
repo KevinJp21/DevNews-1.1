@@ -3,11 +3,11 @@
         {
             "id": 1,
             "logo": "DevNews",
-            "link_logo":"/index.html",
+            "link_logo":"index.html",
             "title-link-1": "Inicio",
             "title-link-2": "Contenido",
-            "link-1":"/index.html",
-            "link-2":"/content.html"
+            "link-1":"index.html",
+            "link-2":"content.html"
         }
     ]
 }
